@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">imc-app</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
 </resources>
