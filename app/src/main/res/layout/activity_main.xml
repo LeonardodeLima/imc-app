@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pos.leonardo.imc_app.MainActivity">
+    tools:context="com.pos.leonardo.imc_app.MainActivity"
+    android:id="@+id/telaPrincpal">
 
     <ImageView
         android:id="@+id/imageView"
@@ -12,13 +13,15 @@
         android:layout_height="150dp"
         android:padding="20dp"
         android:src="@drawable/logo" />
+
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -52,8 +55,8 @@
             android:layout_margin="20dp"
             android:layout_marginTop="32dp"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-            tools:layout_editor_absoluteX="20dp"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp">
 
             <TextView
                 android:layout_width="0dp"
@@ -73,21 +76,27 @@
             android:id="@+id/btcalcular"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calcular IMC"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:text="Calcular IMC" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/textimc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7dp"
-        android:layout_marginTop="20dp"
+        android:layout_margin="120dp"
+        android:layout_marginBottom="68dp"
+        android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
         android:text="IMC"
-        android:layout_margin="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="171dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.744"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"/>
 
     <LinearLayout
         android:id="@+id/dialognome"
